@@ -48,4 +48,4 @@ def scrape_product_links(keywords, jumlah_halaman=10, limit_per_keyword=75):
     driver.quit()
     df = pd.DataFrame(list(product_links), columns=["product_link"])
     df.to_csv("tokopedia_products.csv", index=False)
-    print(f"\n✅ Total produk terkumpul: {len(product_links)}")
+    print(f"\nTotal produk terkumpul: {len(product_links)}")
