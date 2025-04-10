@@ -50,8 +50,8 @@ Sistem ini melakukan **analisis konteks teks review** untuk memberikan label sen
   - Tokenisasi & encoding teks
   - Fine-tuning dengan `Trainer API`
 - Hasil:
-  - Akurasi: > 91%
-  - F1-score: > 91%
+  - Akurasi: > 93%
+  - F1-score: > 93%
 
 ---
 
