@@ -10,12 +10,8 @@ Proyek ini bertujuan untuk membangun sistem **analisis sentimen otomatis** terha
 ## Tujuan Proyek
 
 - Mengumpulkan data ulasan produk dari Tokopedia secara otomatis.
-- Melabeli sentimen secara otomatis berdasarkan rating.
-- Melatih model berbasis **IndoBERT** untuk mengklasifikasikan sentimen review menjadi:
-  - `positif`
-  - `netral`
-  - `negatif`
-
+- Melabeli sentimen secara otomatis berdasarkan konteks kalimat.
+- Membangun sistem klasifikasi sentimen berbasis **transformer** untuk Bahasa Indonesia.
 ---
 
 ## Web Scraping Tokopedia
@@ -32,6 +28,16 @@ Scraping dilakukan dalam dua tahap:
 - Output: file `tokopedia_reviews.csv`
 - Scraping review berdasarkan rating (1–5) dengan batas tertentu
 - Include timestamp, rating, dan isi review
+
+---
+
+## Labeling Sentimen Berbasis BERT
+
+Sistem ini melakukan **analisis konteks teks review** untuk memberikan label sentimen yang lebih kontekstual dan akurat.
+
+### Model yang Digunakan:
+- `w11wo/indonesian-roberta-base-sentiment-classifier` dari Huggingface
+- Pretrained untuk Bahasa Indonesia, mendukung output: `positive`, `neutral`, `negative`
 
 ---
 
